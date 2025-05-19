@@ -19,7 +19,8 @@ jobs:
           sdk-version: 26100
 
       - name: Print Windows SDK Path
-        run: echo "Windows SDK Path: ${{ env.WINDOWS_SDK_PATH }}"
+        run: |
+          echo "Windows SDK Path: ${{ env.WINDOWS_SDK_PATH }}"
 
       - name: List SDK Directory
         run: |

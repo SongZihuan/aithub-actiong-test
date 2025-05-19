@@ -18,11 +18,6 @@ jobs:
         with:
           sdk-version: 26100
 
-      - name: Print Windows SDK Path
-        run: |
-          echo "Windows SDK Path: ${{ env.WINDOWS_SDK_PATH }}"
-
       - name: List SDK Directory
         run: |
-          dir "C:\Program Files (x86)\Windows Kits\10"
-          dir "C:\Program Files\Windows Kits\10"
+          dir "C:\Program Files (x86)\Windows Kits\10\bin"
